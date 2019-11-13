@@ -25,11 +25,8 @@ enum preonic_layers {
 
 enum preonic_keycodes {
   LOWER = SAFE_RANGE,
-  RAISE,
-  DYNAMIC_MACRO_RANGE
+  RAISE
 };
-
-#include "dynamic_macro.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_preonic_1x2uC( \
@@ -66,10 +63,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  if (!process_record_dynamic_macro(keycode, record)) {
-    return false;
-  }
-
   switch (keycode) {
     case LOWER:
       if (record->event.pressed) {
