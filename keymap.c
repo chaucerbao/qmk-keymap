@@ -41,27 +41,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       ),
 
   [_LOWER] = LAYOUT_preonic_1x2uC( \
-      DYN_REC_STOP, DYN_MACRO_PLAY1, DYN_MACRO_PLAY2, _______, _______, _______, _______, _______, KC_BSPC, KC_PSLS, KC_PAST, KC_PMNS, \
-      _______,      DYN_REC_START1,  DYN_REC_START2,  _______, _______, _______, _______, _______, KC_P7,   KC_P8,   KC_P9,   KC_PPLS, \
-      RAISE,        _______,         _______,         _______, _______, _______, _______, _______, KC_P4,   KC_P5,   KC_P6,   KC_PEQL, \
-      _______,      _______,         _______,         _______, _______, _______, _______, _______, KC_P1,   KC_P2,   KC_P3,   KC_PENT, \
-      _______,      _______,         _______,         _______, LOWER,   _______, RAISE,   KC_P0,   _______, KC_PDOT, _______  \
+      DYN_REC_STOP, DYN_MACRO_PLAY1, DYN_MACRO_PLAY2, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSPC, KC_PSLS, KC_PAST, KC_PMNS, \
+      XXXXXXX,      DYN_REC_START1,  DYN_REC_START2,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P7,   KC_P8,   KC_P9,   KC_PPLS, \
+      RAISE,        XXXXXXX,         XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P4,   KC_P5,   KC_P6,   KC_PEQL, \
+      XXXXXXX,      XXXXXXX,         XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1,   KC_P2,   KC_P3,   KC_PENT, \
+      XXXXXXX,      XXXXXXX,         XXXXXXX,         XXXXXXX, LOWER,   _______, RAISE,   KC_P0,   XXXXXXX, KC_PDOT, XXXXXXX  \
       ),
 
   [_RAISE] = LAYOUT_preonic_1x2uC( \
-      KC_GRV,  KC_F1,    KC_F2,       _______,   _______, _______, _______, _______, _______, KC_MINS, KC_EQL,  KC_DEL,  \
-      _______, _______,  _______,     _______,   _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_LPRN, KC_RPRN, \
-      RAISE,   _______,  _______,     _______,   _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_LCBR, KC_RCBR, \
-      _______, KC__MUTE, KC__VOLDOWN, KC__VOLUP, _______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, \
-      _______, _______,  _______,     _______,   LOWER,   _______, RAISE,   _______, _______, _______, _______  \
+      KC_GRV,  KC_F1,    KC_F2,       XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MINS, KC_EQL,  KC_DEL,  \
+      XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_LPRN, KC_RPRN, \
+      RAISE,   XXXXXXX,  XXXXXXX,     XXXXXXX,   XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_LCBR, KC_RCBR, \
+      XXXXXXX, KC__MUTE, KC__VOLDOWN, KC__VOLUP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, \
+      XXXXXXX, XXXXXXX,  XXXXXXX,     XXXXXXX,   LOWER,   _______, RAISE,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX  \
       ),
 
   [_ADJUST] = LAYOUT_preonic_1x2uC( \
-      RESET,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, DEBUG,   \
-      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-      RAISE,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-      _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-      _______, _______, _______, _______, LOWER,   _______, RAISE,   _______, _______, _______, _______  \
+      RESET,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, DEBUG,   \
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+      RAISE,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LOWER,   _______, RAISE,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX  \
       )
 };
 
