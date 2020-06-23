@@ -1,7 +1,7 @@
 #pragma once
 
 #ifdef AUDIO_ENABLE
-  #define STARTUP_SONG SONG(Q__NOTE(_E6), Q__NOTE(_G6), Q__NOTE(_E7), Q__NOTE(_C7), Q__NOTE(_D7), H__NOTE(_G7))
+  #define STARTUP_SONG SONG(PREONIC_SOUND)
 #endif
 
 #define MUSIC_MASK (keycode != KC_NO)
