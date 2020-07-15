@@ -8,6 +8,4 @@
 #define MIDI_BASIC
 
 #define NO_ACTION_ONESHOT
-#define PERMISSIVE_HOLD
-#define RETRO_TAPPING
-#define TAPPING_TERM 125
+#define NO_ACTION_TAPPING
