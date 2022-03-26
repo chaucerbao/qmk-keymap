@@ -1,11 +1,19 @@
 #pragma once
 
 #ifdef AUDIO_ENABLE
-  #define STARTUP_SONG SONG(PREONIC_SOUND)
+#  undef ONE_UP_SOUND
+#  define ONE_UP_SOUND Q__NOTE(_E6), Q__NOTE(_G6), Q__NOTE(_E7), Q__NOTE(_C7), Q__NOTE(_D7), Q__NOTE(_G7),
+#  define STARTUP_SONG SONG(ONE_UP_SOUND)
 #endif
 
-#define MUSIC_MASK (keycode != KC_NO)
+#define AUDIO_INIT_DELAY
 #define MIDI_BASIC
+#define MUSIC_MASK (keycode != KC_NO)
+#define NO_MUSIC_MODE
 
+#define LAYER_STATE_8BIT
 #define NO_ACTION_ONESHOT
 #define NO_ACTION_TAPPING
+
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
